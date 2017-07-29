@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">PNS6</string>
+    <string name="connect_failed">无网络?</string>
+    <string name="soft_update">软件更新</string>
+    <string name="rootPath">/mnt/sdcard/PNS9</string>
+    <string name="network">当前网络不可用,请检查你的网络…</string>
+    <string name="message">消息</string>
+    <string name="contact">联系人</string>
+    <string name="menu">菜单</string>
+    <string name="phone">语音电话</string>
+    <string name="video">视频浏览</string>
+    <string name="login">登录/login</string>
+    <string name="login_name1">宁夏公路管理局银川分局</string>
+    <string name="login_name2">贺兰山收费站单兵系统</string>
+    <string name="password">密码/password</string>
+    <string name="username">账号/username</string>
+    <string name="login_bottom_name">南京云冠交通科技有限公司</string>
+    <string name="main_name">贺兰山收费站单兵系统</string>
+    <string name="main_userName">工号： </string>
+    <string name="main_realName">姓名： </string>
+    <string name="ip">服务器ip:</string>
+    <string name="edit_Ip">请填写服务器ip</string>
+    <string name="id">设备id:</string>
+    <string name="edit_Id">请填写设备id</string>
+    <string name="centerNum">中心号码：</string>
+    <string name="edit_centerNum">请填写中心号码</string>
+    <string name="devConfig">设备信息配置</string>
+    <string name="friendList">好友列表</string>
+    <string name="keyPhone">拨号键盘</string>
+    <string name="oldpwd">旧密码:</string>
+    <string name="newpwd">新密码:</string>
+    <string name="newpwdagain">再次输入新密码:</string>
+    <string name="changepwd">修改密码</string>
+    <string name="NoApp">没有应用</string>
+    <string name="download">下载</string>
+    <string name="desc">描述</string>
+    <string name="str_recorder_normal">按住说话</string>
+    <string name="str_recorder_recording">松开结束</string>
+    <string name="str_recorder_want_cancel">松开手指，取消发送</string>
+    <string name="the_directory_is_empty">The directory is empty</string>
+    <string name="sdcard_unmonted_hint">Please mount the sdcard at first</string>
+    <!-- 存储文件文件夹 -->
+    <string name="Files">Files</string>
+    <!-- 图像文件夹 -->
+    <string name="Image">Image</string>
+    <!-- 缩略图文件夹 -->
+    <string name="Thumbnail">Thumbnail</string>
+    <!-- 视频文件夹 -->
+    <string name="Video">Video</string>
+    <string name="album_enter_select">选择</string>
+    <string name="api_cancel">取消</string>
+    <string name="album_photo_select_tip">项</string>
+    <string name="album_phoot_select_all">全选</string>
+    <string name="album_phoot_unselect_all">取消全选</string>
+    <string name="album_title">我的相册</string>
+    <string name="pgcommon_share">分享</string>
+    <string name="common_delete">删除</string>
+    <string name="common_upload">上传</string>
+    <string name="album_message">图片&amp;视频</string>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#000"
+    android:orientation="vertical">
+
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="342dp"
+        android:layout_height="456dp" />
+
+    <!--<SurfaceView-->
+    <!--android:id="@+id/surfaceView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+<!--<Button-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/change_resolution"-->
+    <!--android:text="更改分辨率"-->
+    <!--android:textSize="12sp"-->
+    <!--android:layout_gravity="right"-->
+    <!--android:layout_marginEnd="15dp"-->
+    <!--android:textColor="#fff"-->
+    <!--android:background="#000"/>-->
+
+
+
+</LinearLayout>
