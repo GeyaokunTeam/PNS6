@@ -21,7 +21,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.lang.ref.WeakReference;
 import java.lang.reflect.Method;
 
 /**
@@ -32,7 +31,7 @@ import java.lang.reflect.Method;
 public class MakeSmallVideoManager {
     private final String TAG = "MakeSmallVideoManager";
     private static MakeSmallVideoManager mInstance;
-    private WeakReference<Context> weakContext;
+    private Context mContext;
 
     private Camera mCamera;
     public boolean isRecording;
@@ -41,13 +40,13 @@ public class MakeSmallVideoManager {
     private File recordOutput;
 
     private MakeSmallVideoManager(Context context) {
-        weakContext = new WeakReference<Context>(context);
+        mContext = context;
         mRecorder = new MediaRecorder();
     }
 
     public static MakeSmallVideoManager getInstance(Context context) {
         if (mInstance == null) {
-            mInstance = new MakeSmallVideoManager(context);
+            mInstance = new MakeSmallVideoManager(context.getApplicationContext());
         }
         return mInstance;
     }
@@ -147,7 +146,7 @@ public class MakeSmallVideoManager {
         mRecorder.setOrientationHint(90);
         mRecorder.setAudioSource(MediaRecorder.AudioSource.CAMCORDER);
         mRecorder.setVideoSource(MediaRecorder.VideoSource.CAMERA);
-        String path = FileOperateUtil.getFolderPath(weakContext.get(), FileOperateUtil.TYPE_VIDEO, "Camera");
+        String path = FileOperateUtil.getFolderPath(mContext, FileOperateUtil.TYPE_VIDEO, "Camera");
         File directory = new File(path);
         if (!directory.exists()) {
             boolean mkdirs = directory.mkdirs();
@@ -195,7 +194,7 @@ public class MakeSmallVideoManager {
             Bitmap bitmap = getVideoThumbnail(smallMoviePath, v);
 
             if (bitmap != null) {
-                String mThumbnailFolder = FileOperateUtil.getFolderPath(weakContext.get(), FileOperateUtil.TYPE_THUMBNAIL, "Camera");
+                String mThumbnailFolder = FileOperateUtil.getFolderPath(mContext, FileOperateUtil.TYPE_THUMBNAIL, "Camera");
                 File folder = new File(mThumbnailFolder);
                 if (!folder.exists()) {
                     folder.mkdirs();
