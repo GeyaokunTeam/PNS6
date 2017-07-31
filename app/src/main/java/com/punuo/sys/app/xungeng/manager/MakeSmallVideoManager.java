@@ -51,10 +51,6 @@ public class MakeSmallVideoManager {
         return mInstance;
     }
 
-    public void destory() {
-        mInstance = null;
-    }
-
     public void openCamera(SurfaceHolder mSurfaceHolder) {
         int numberOfCameras = Camera.getNumberOfCameras();
         Camera.CameraInfo cameraInfo = new Camera.CameraInfo();

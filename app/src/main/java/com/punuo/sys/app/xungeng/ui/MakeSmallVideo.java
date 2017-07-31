@@ -158,7 +158,6 @@ public class MakeSmallVideo extends Activity implements SurfaceHolder.Callback, 
     protected void onDestroy() {
         super.onDestroy();
         ActivityCollector.removeActivity(this);
-        mMakeSmallVideoManager.destory();
         mMakeSmallVideoManager = null;
         SipInfo.flag = true;
         flag = false;
