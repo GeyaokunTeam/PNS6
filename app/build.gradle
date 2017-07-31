@@ -5,7 +5,7 @@ android {
         xungeng {
             keyAlias 'hangzhoupunuokeystore'
             keyPassword '123456'
-            storeFile file('/Users/ysx/Desktop/android/keystore/hangzhoupunuo.jks')
+            storeFile file('/key/hangzhoupunuo.jks')
             storePassword '123456'
         }
     }
